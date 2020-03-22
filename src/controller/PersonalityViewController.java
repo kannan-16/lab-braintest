@@ -45,10 +45,14 @@ public class PersonalityViewController extends HttpServlet {
 		// The value returned from the method is of type string.
 		//Name the string literal as message
 		// string value can be rightbrained, leftbrained or well balanced
+		PersonalityCalculator personality=new PersonalityCalculator();
+		
+		String message=personality.findYourBrainType(options);
+		System.out.println(message);
+		request.setAttribute("message", message);
 		
 		
-		
-		/* Un the below lines to test your code l
+		/* Un the below lines to test your code l*/
 		request.setAttribute("message", message);
 		
 		if(message!=null)
@@ -66,7 +70,7 @@ public class PersonalityViewController extends HttpServlet {
 				rd.forward(request, response);
 			}
 		
-		}*/
+		}
 		}
 	}
 

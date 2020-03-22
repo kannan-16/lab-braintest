@@ -19,7 +19,7 @@
 
 <main>HERE YOU GO... </main>
 
-   <form id="myForm" action="${pageContext.request.contextPath}/personality" method="post">
+   <form id="myForm" action=`${pageContext.request.contextPath}/personality` method="post">
   <div class="quiz-container">
           <div id="question" class="question"></div>
       	    <div class="card">
